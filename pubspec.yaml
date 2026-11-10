@@ -1,0 +1,50 @@
+name: smart_krishi_mitra
+
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  firebase_core: ^4.15.0
+  firebase_auth: ^6.7.0
+  cloud_firestore: ^6.10.0
+  http: ^1.6.0
+  image_picker: ^1.2.3
+  tflite_flutter: ^0.12.1
+  image: ^4.10.1
+  shared_preferences: ^2.5.5
+  flutter_launcher_icons: ^0.14.4
+  pdf: ^3.13.1
+  printing: ^5.15.1
+  share_plus: ^13.3.1
+  url_launcher: ^6.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/models/smart_krishi_sugarcane_gate.tflite
+    - assets/models/sugarcane_disease_model.tflite
+    - assets/models/class_names.txt
+    - assets/data/sugarcane_knowledge_base.txt
+    - assets/app_icon.png
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/app_icon.png"
